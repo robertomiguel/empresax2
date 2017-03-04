@@ -1,0 +1,45 @@
+.tablaListado {
+    max-width       : 90%;
+}
+
+.tablaListado tr:hover {
+    cursor          : pointer;
+}
+
+.input-group-btn>.btn {
+    top                 : 0;
+}
+
+#searchclear {
+    position            : absolute;
+    right               : 15px;
+    top                 : 0;
+    bottom              : 0;
+    height              : 14px;
+    margin              : auto;
+    font-size           : 20px;
+    cursor              : pointer;
+    color               : black;
+}
+
+.listaMarca {
+    font-size               : 15px;
+    background              : black;
+    color                   : white;
+    -webkit-border-radius   : 25px 0 0 25px !important;
+    -moz-border-radius      : 25px 0 0 25px !important;
+    border-radius           : 25px 0 0 25px !important;
+    padding-top             : 2px  !important;
+    padding-right           : 2px  !important;
+    padding-bottom          : 2px  !important;
+}
+
+#buscarXmarca {
+    color                   : red;
+}
+
+.borrar-filtro {
+    -webkit-border-radius   : 0 25px 25px 0 !important; 
+    -moz-border-radius      : 0 25px 25px 0 !important;
+    border-radius           : 0 25px 25px 0 !important;
+}

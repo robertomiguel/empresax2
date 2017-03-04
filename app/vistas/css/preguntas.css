@@ -1,0 +1,19 @@
+.pregunta {
+	font-size: 16px;
+	color: white;
+	background: black;
+	font-weight: bold;
+	text-align: center;
+}
+.respuesta {
+	color: red;background: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.preguntas .panel {
+	  overflow              : hidden;
+    -webkit-border-radius   : 10px !important;
+    -moz-border-radius      : 10px !important;
+    border-radius           : 10px !important;
+}

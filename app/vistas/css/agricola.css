@@ -1,0 +1,55 @@
+#agricola {
+    background-image: url('/img/fondoagro.jpg');
+    opacity         : 50%;
+}
+
+.promo-agricola { 
+    text-align              : center;
+    max-width               : 90%;
+    border-right            : 15px;
+    overflow                : hidden;
+ }
+
+.promo-agricola table { width: 100%;
+    background              : white;
+    border-collapse         : separate;
+    border                  : solid 1px black;
+ }
+
+.promo-agricola table td {
+	font-family         : "Impact" !important;
+    letter-spacing      : 3px      !important;
+    font-weight         : normal   !important;
+    font-size           : 1.5em;
+}
+.promo-agricola table tr:nth-child(odd) {
+	background     : black;
+	color          : white;
+}
+.promo-agricola table tr:nth-child(even) {
+	background     : yellow;
+	color          : black;
+}
+
+.maquina-agricola div p {
+    overflow                : hidden;    
+}
+
+.maquina-agricola, .maquina-vial { text-align: center; padding: 15px }
+
+.maquina-vial p, .maquina-agricola p {
+	font-family         : "Impact"  !important;
+    letter-spacing      : 3px       !important;
+    font-weight         : normal    !important;
+    font-size           : 1.2em;
+    background          : white;
+    color               : black;
+    border              : solid 1px red;
+    padding             : 15px;
+}
+
+.maquina-vial p, .maquina-agricola p, .promo-agricola {
+    -webkit-border-radius   : 15px !important;
+    -moz-border-radius      : 15px !important;
+    border-radius           : 15px !important;
+}

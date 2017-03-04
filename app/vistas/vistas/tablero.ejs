@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tablero IO</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+  </head>
+  <style>
+    .tablero {
+      position: absolute;
+      width: 1024px;
+      height: 768px;
+      background: #DFDFDF;
+      border: solid 2px black;
+      padding: 30px;
+    }
+
+    .cursor1 {
+      position    : absolute;
+      width       : 30px;
+      height      : 30px;
+      background  : #57E810;
+      border      : solid 2px blue;
+      top         : 100px;
+      left        : 100px;
+      -webkit-border-radius   : 15px;
+      -moz-border-radius      : 15px;
+      border-radius           : 15px;
+      opacity                 : 0.5;
+      -webkit-box-shadow  : 0 0 8px 4px rgba(0, 0, 0, .5);
+      box-shadow          : 0 0 8px 4px rgba(0, 0, 0, .5);
+    }
+
+    .cursor2 {
+      position    : absolute;
+      width       : 100px;
+      height      : 100px;
+      background-image: url('/img/mano1.png');
+      background-size: 100px 100px;
+      top         : 100px;
+      left        : 100px;
+    }
+
+    .cursor3 {
+      position    : absolute;
+      width       : 50px;
+      height      : 50px;
+      background-image: url('/img/flecha1.png');
+      background-size: 50px 50px;
+      top         : 100px;
+      left        : 100px;
+    }
+
+    .sombra {
+      -webkit-box-shadow  : 0 0 8px 4px rgba(0, 0, 0, .5);
+      box-shadow          : 0 0 8px 4px rgba(0, 0, 0, .5);
+    }
+  </style>
+  <body>
+    <h4 class="conectado">Tablero</h4>
+<div class="tablero">
+    <div class="cursor1" id="cursor" hidden></div>
+      
+    <pre>
+La teoría de la relatividad incluye tanto a la teoría de la relatividad especial como la de relatividad general, 
+formuladas por Albert Einstein a principios del siglo XX, que pretendían resolver la incompatibilidad existente 
+entre la mecánica newtoniana y el electromagnetismo.
+
+La teoría de la relatividad especial, publicada en 1905, trata de la física del movimiento de los cuerpos en 
+ausencia de fuerzas gravitatorias, en el que se hacían compatibles las ecuaciones de Maxwell del electromagnetismo 
+con una reformulación de las leyes del movimiento.
+
+La teoría de la relatividad general, publicada en 1915, es una teoría de la gravedad que reemplaza a la gravedad 
+newtoniana, aunque coincide numéricamente con ella para campos gravitatorios débiles y "pequeñas" velocidades. La 
+teoría general se reduce a la teoría especial en ausencia de campos gravitatorios.
+    </pre>
+    <img src="/img/foto1.jpg" alt="">
+</div>
+  </body>
+  <script src="/js/socket.io.js"></script>
+  <script src="/js/jquery.js"></script>
+  <script>
+    //var ws_puerto = window.location.href.split(':3')[0] + ':3001';
+    //var socket = io(ws_puerto);
+    var socket = io('https://localhost:3001');
+
+    socket.on('connect', function(){
+      $('.conectado').css('color','green');
+      $('.conectado').html('Tablero Conectado');
+    });
+
+    socket.on('disconnect', function(){
+      $('.conectado').css('color','red');
+      $('.conectado').html('Tablero Desconectado');
+    });
+
+    socket.on('cursor', function(msg){
+      $('#cursor').css(msg);
+    });
+    socket.on('cambiarCursor', function(msg){
+      switch (msg){
+        case 1:
+          $('#cursor').removeClass('cursor2 cursor3').addClass('cursor1');
+        break;
+        case 2:
+          $('#cursor').removeClass('cursor1 cursor3').addClass('cursor2');
+        break;
+        case 3:
+          $('#cursor').removeClass('cursor1 cursor2').addClass('cursor3');
+        break;
+        default:
+      }
+      $('#cursor').css(msg);
+    });
+    socket.on('mostrarCursor', function(msg){
+      $('#cursor').toggle();
+    });
+  </script>
+</html>
