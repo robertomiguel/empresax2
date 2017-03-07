@@ -14,7 +14,8 @@
 	<div class="marco redondear sombra">
 			<div class="header">
 				<br>
-					<p class="text-center bg-info">Lima 1422 - 2000 Rosario - Santa Fe - info@serviciospremier.com.ar - Tel/Fax 0341-679-1831 Lunes a viernes 9 a 15hs</p>
+					<p class="text-center bg-info">Lima 1422 - 2000 Rosario - Santa Fe - Argentina<br/>
+			info@serviciospremier.com.ar - Tel/Fax 0341-679-1831 - 0341-222-4779 Lunes a viernes 9 a 15hs</p>
 				<div class="cabeza redondear2">
 					<img src="/img/cabezapremier.jpg" class="img-responsive centrado" />
 				</div>
@@ -66,6 +67,9 @@
 			  	</div>
 			  	<div id="promo" class="tab-pane fade">
 			  		@include('menu.promo')
+			  	</div>
+			  	<div id="clientes" class="tab-pane fade">
+			  		@include('menu.login')
 			  	</div>
 			</div>
 		</div>

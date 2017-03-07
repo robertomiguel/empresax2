@@ -81,6 +81,11 @@
 						<span class="glyphicon glyphicon-question-sign"></span> Preguntas Frecuentes
 					</a>
 				</li>
+				<li>
+					<a data-toggle="tab" href="#clientes">
+						<span class="glyphicon glyphicon-user"></span> Acceso Clientes
+					</a>
+				</li>
 			</ul>
 		</div>
 	</div>

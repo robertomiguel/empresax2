@@ -1,1 +1,0 @@
-<div align="center"> <img src="/img/serviciospremiervertical.jpg" alt="" /> </div> <br /> <div class="marquesina redondear2 centrado"> CAMBIE SU VEHÍCULO USADO - CUOTAS FIJAS - ADJUDICACIÓN INMEDIATA </div> <?php echo $__env->make('menu.imagenes', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -10,7 +10,7 @@
 			</div>
 		</div>
 
-		<div class="col-md-4">
+	<!-- 	<div class="col-md-4">
 			<div class="input-group">
 				<input 	type="text" id="buscarPrecio" placeholder="Cuotas hasta..." 
 						class="buscar form-control redondear2" />
@@ -19,7 +19,7 @@
 							ng-click="buscarPrecio()" type="button" id="btn-buscar"></button>
 				</span>
 			</div>
-		</div>
+		</div> -->
 	</div>
 
 	<div align="center" id="resultado-informe"></div>

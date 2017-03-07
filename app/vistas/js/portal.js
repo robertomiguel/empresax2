@@ -35,7 +35,7 @@ $(document).ready(function() {
 var app = angular.module('premierApp',[]);
 
 app.controller("premierCtrl", function ($scope, $http) {
-
+    $scope.entrar = function(){alert('Usuario y/o contraseña incorrecta.')}
     $scope.borrarBuscarXmarca = function(){
       $("#buscarXmarca").val('').trigger('input');
       $scope.buscar.modelo = '';
@@ -62,7 +62,12 @@ app.controller("premierCtrl", function ($scope, $http) {
                   data: {buscar:texto}
           }).then(function(response) {
                 if (response.data=='ko') {
-                  $('#resultado-informe').html('No se encuentra: <span style="color:blue">' + texto + '</span>');
+                  $('#resultado-informe').html('No se encuentra: <span style="color:blue">' + texto + '</span><br/>'
+                                                + '<a data-toggle="tab" href="#contacto">'
+                                                + '<span class="glyphicon glyphicon-phone-alt"></span> '
+                                                + 'Comuníquese con la empresa si su vehículo no aparece aquí.'
+                                                + '</a>'
+                                                );
                   $scope.listaResultado = '';
                 } else {
                      $('.nav-tabs a[href="#resultado"]').tab('show');
@@ -70,7 +75,6 @@ app.controller("premierCtrl", function ($scope, $http) {
                   }
             });
     }
-
 });
 
 function posicionarMenu() {
