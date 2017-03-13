@@ -66,11 +66,11 @@
 						<span class="glyphicon glyphicon-gift"></span> Promociones <span class="badge">0</span>
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a data-toggle="tab" href="#expoagro">
 						<span class="glyphicon glyphicon-bullhorn"></span> EXPOAGRO 2017
 					</a>
-				</li>
+				</li> -->
 				<li>
 					<a data-toggle="tab" href="#resultado">
 						<span class="glyphicon glyphicon-search"></span> Buscar

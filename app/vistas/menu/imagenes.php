@@ -45,7 +45,7 @@
 		<div>
 			<h3 class="letra-premier">
 				<span class="titulo1">FIAT TORO</span>
-				<span class="titulo2">$ 445.900</span>
+				<span class="titulo2">$ 490.300</span>
 			</h3>
 			<img class="auto img-responsive" src="/img/autos/a2016/f1.jpg" alt="" />
 		</div>

@@ -83,13 +83,13 @@
 					</div>
 					<div class="col-md-12">
 						<br>(En caso de ser beneficiario por sorteo puede adjudicar en 6 meses u obtener
-						su vehículo de forma inmediata abonando un anticipo del 30%)	
+						su vehículo de forma inmediata abonando un anticipo del 50%)	
 					</div>
 				</div>
 			</div>
 		</div>
 		<br />
-		<div class="panel panel-primary ">
+		<!-- <div class="panel panel-primary ">
 			<div class="panel‐heading pregunta">
 				¿Que pasa si la concesionaria se demora en la entrega?
 			</div>
@@ -99,7 +99,7 @@
 				No hay demoras superior a los 30 días, usted recibe bonificada
 				la cuota en espera.
 			</div>
-		</div>
+		</div> -->
 		<br />
 		<div class="panel panel-primary ">
 			<div class="panel‐heading pregunta">
