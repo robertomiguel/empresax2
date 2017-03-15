@@ -7,11 +7,11 @@
 	<div class="panel-body">
 	 	<div class="col-md-5">
 	  		<label id="nombreCli">Usuario</label>
-	    	<input class="form-control" type="text" id="nombreCli" placeholder="Nombre de usuario..." />
+	    	<input class="form-control" type="text" ng-model="nombre" placeholder="Nombre de usuario..." />
 	  	</div>
 		<div class="col-md-5">
 			<label id="asdasdCli">Contraseña</label>
-		   	<input class="form-control" type="password" id="asdasdCli" placeholder="Contraseña..." />
+		   	<input class="form-control" type="password" ng-model="pass" placeholder="Contraseña..." />
 		</div>
 	   	<div class="col-md-2">
 	   		<br/>

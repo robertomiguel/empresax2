@@ -35,7 +35,25 @@ $(document).ready(function() {
 var app = angular.module('premierApp',[]);
 
 app.controller("premierCtrl", function ($scope, $http) {
-    $scope.entrar = function(){alert('Usuario y/o contraseña incorrecta.')}
+    $scope.nombre = '';
+    $scope.pass   = '';
+    $scope.entrar = function() {
+      $http({
+          method  : 'post',
+          url     : 'verplan',
+          data    :  {nombre: $scope.nombre, clave: $scope.pass}
+       }).then(function successCallback(response) {
+            if (response.data=='no') {
+              alert('Usuario y/o contraseña incorrecta.');
+            } else {
+              $('#clientes').html(response.data);
+            }
+            
+           }, function errorCallback(response) {
+                  alert('Error de conexión: ' + response.data);
+    });
+    }
+
     $scope.borrarBuscarXmarca = function(){
       $("#buscarXmarca").val('').trigger('input');
       $scope.buscar.modelo = '';

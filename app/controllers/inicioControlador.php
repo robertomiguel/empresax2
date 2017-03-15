@@ -7,7 +7,7 @@ class InicioControlador extends BaseController {
 		return View::make('inicio');
 	}
 
-	public function listaAutos(){
+	public function listaAutos() {
 		$marca = Input::get('marca') * 1;
 		$sql = "SELECT plan AS modelo, cuota1 AS precio
                   FROM articulo
@@ -46,6 +46,17 @@ class InicioControlador extends BaseController {
 			return $datos;
 		} else {
 			return 'ko';
+		}
+	}
+
+	public function verplan() {
+		$nombre = Input::get('nombre');
+		$pass   = Input::get('clave');
+
+		if ($nombre == '13994959' && $pass == '13994959') {
+			return View::make('informe.irigoitia-ramon');
+		} else {
+			return 'no';
 		}
 	}
 
