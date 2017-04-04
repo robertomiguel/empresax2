@@ -60,4 +60,10 @@ class InicioControlador extends BaseController {
 		}
 	}
 
+	public function descargarRecibo () {
+		header('Content-type: application/pdf');
+		header('Content-Disposition: attachment; filename="irigoitia_abril-2017.pdf"');
+		readfile('../app/vistas/recibos/irigoitia_abril-2017.pdf');
+	}
+
 }

@@ -51,6 +51,8 @@ Route::post('buscar', 'inicioControlador@buscar');
 
 Route::post('verplan', 'inicioControlador@verplan');
 
+Route::get('descargarRecibo', 'inicioControlador@descargarRecibo');
+
 Route::post('imagenes', function(){
  //$url     = 'https://www.google.com/search?site=&tbm=isch&q=nude+teen';
   $buscar = str_replace(' ', '+', Input::get('buscar'));

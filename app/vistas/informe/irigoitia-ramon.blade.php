@@ -22,10 +22,14 @@
 		<th colspan="2" class="text-center"><span class="glyphicon glyphicon-eye-open"></span> Detalle de cuotas</th>
 	</tr>
 	<tr>
-		<td><span class="glyphicon glyphicon-folder-open"></span> Cuota 11</td><td style="color:black" align="right">
+		<td><span class="glyphicon glyphicon-folder-open"></span> Cuota 12</td><td style="color:black" align="right">
 			Sin emitir <span class="glyphicon glyphicon-hourglass"></span>
 			<!-- <a href="descargarcuota" target="_blank">Descargar</a> -->
 	</td>
+	</tr>
+	<tr>
+		<td><span class="glyphicon glyphicon-folder-open"></span> Cuota 11</td><td style="color:green" align="right"><a href="descargarRecibo">Descargar</a> <span class="glyphicon glyphicon-download-alt"></span></td>
+		
 	</tr>
 	<tr>
 		<td><span class="glyphicon glyphicon-folder-close"></span> Cuota 10</td><td style="color:green" align="right">Pagada <span class="glyphicon glyphicon-ok-circle"></span></td>
