@@ -15,7 +15,7 @@
 			<div class="header">
 				<br>
 					<p class="text-center bg-info">Lima 1422 - 2000 Rosario - Santa Fe - Argentina<br/>
-			info@serviciospremier.com.ar - Tel/Fax 0341-679-1831 - 0341-222-4779 Lunes a viernes 9 a 15hs</p>
+			serviciospremier@mail.com - Tel/Fax 0341-679-1831 - 0341-222-4779 Lunes a viernes 9 a 15hs</p>
 				<div class="cabeza redondear2">
 					<img src="/img/cabezapremier.jpg" class="img-responsive centrado" />
 				</div>
@@ -37,7 +37,7 @@
 			 	<div id="laempresa" class="tab-pane fade">
 					@include('menu.laempresa')
 				</div>
-				
+
 				<div id="lista_de_autos" class="tab-pane fade">
 					@include('menu.buscarXmarca')
 				</div>
@@ -61,7 +61,7 @@
 				<div id="preguntas" class="tab-pane fade">
 				    @include('menu.preguntas')
 				</div>
-			  
+
 			  	<div id="resultado" class="tab-pane fade">
 			  		@include('menu.buscar')
 			  	</div>

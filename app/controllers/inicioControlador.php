@@ -3,7 +3,7 @@
 class InicioControlador extends BaseController {
 
 	public function index()
-	{	
+	{
 		return View::make('inicio');
 	}
 
@@ -24,7 +24,7 @@ class InicioControlador extends BaseController {
 		$texto = Input::get('buscar');
 
 		$rlike = str_replace(' ','|', $texto);
-	    $rlike = preg_replace('/\+|\?|\.|\^|-|\*/',' ',$rlike); 
+	    $rlike = preg_replace('/\+|\?|\.|\^|-|\*/',' ',$rlike);
 
 	    $rlike = preg_replace('/s|c|z/','[scz]+', $rlike);
 	    $rlike = preg_replace('/v|b/',  '[vb]',   $rlike);
@@ -32,15 +32,15 @@ class InicioControlador extends BaseController {
 	    $rlike = preg_replace('/ll/',   'l',      $rlike);
 	    $rlike = preg_replace('/l/',    'l+',     $rlike);
 	    $rlike = preg_replace('/t/',    't+',     $rlike);
-		
+
 		$sql = "
-			SELECT articulo.plan AS modelo, articulo.cuota1 AS precio, marca.nombre AS marca 
+			SELECT articulo.plan AS modelo, articulo.cuota1 AS precio, marca.nombre AS marca
 			 FROM articulo
 			 JOIN marca ON (marca.id = articulo.marca_id)
 			WHERE plan RLIKE :value
 		";
 			//WHERE MATCH (plan) AGAINST ( :value IN BOOLEAN MODE)
-		
+
 		$datos = DB::select($sql,array('value' => $rlike));
 		if ($datos) {
 			return $datos;
@@ -62,8 +62,8 @@ class InicioControlador extends BaseController {
 
 	public function descargarRecibo () {
 		header('Content-type: application/pdf');
-		header('Content-Disposition: attachment; filename="irigoitia_abril-2017.pdf"');
-		readfile('../app/vistas/recibos/irigoitia_abril-2017.pdf');
+		header('Content-Disposition: attachment; filename="irigoitia_mayo-2017.pdf"');
+		readfile('../app/vistas/recibos/irigoitia_mayo-2017.pdf');
 	}
 
 }
