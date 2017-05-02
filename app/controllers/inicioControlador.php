@@ -55,15 +55,25 @@ class InicioControlador extends BaseController {
 
 		if ($nombre == '13994959' && $pass == '13994959') {
 			return View::make('informe.irigoitia-ramon');
-		} else {
-			return 'no';
 		}
+
+		if ($nombre == '26994257' && $pass == '26994257') {
+			return View::make('informe.zachozy-jorge');
+		}
+		return 'no';
+		
 	}
 
 	public function descargarRecibo () {
 		header('Content-type: application/pdf');
 		header('Content-Disposition: attachment; filename="irigoitia_mayo-2017.pdf"');
 		readfile('../app/vistas/recibos/irigoitia_mayo-2017.pdf');
+	}
+
+	public function descargarReciboZ () {
+		header('Content-type: application/pdf');
+		header('Content-Disposition: attachment; filename="zachozy_mayo-2017.pdf"');
+		readfile('../app/vistas/recibos/zachozy_mayo-2017.pdf');
 	}
 
 }

@@ -52,6 +52,7 @@ Route::post('buscar', 'inicioControlador@buscar');
 Route::post('verplan', 'inicioControlador@verplan');
 
 Route::get('descargarRecibo', 'inicioControlador@descargarRecibo');
+Route::get('descargarReciboZ', 'inicioControlador@descargarReciboZ');
 
 Route::post('imagenes', function(){
  //$url     = 'https://www.google.com/search?site=&tbm=isch&q=nude+teen';
