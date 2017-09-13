@@ -15,6 +15,7 @@
 </table>
 
 <div class="centrado">
-	<h1>Sitio en mentenimiento</h1>
-	<h2>Estimado cliente, estamos actualizando la web para una mejor atención.</h2>
+	<h2>Sitio en mantenimiento</h2>
+	<h3>Estimado cliente, estamos actualizando la web para una mejor atención.</h3>
+	<h3>Disculpe la molestia.</h3>
 </div>
