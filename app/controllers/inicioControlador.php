@@ -60,8 +60,12 @@ class InicioControlador extends BaseController {
 		if ($nombre == '26994257' && $pass == '26994257') {
 			return View::make('informe.zachozy-jorge');
 		}
+
+		if ($nombre == '27134817' && $pass == '27134817') {
+			return View::make('informe.martinez-adriana');
+		}
 		return 'no';
-		
+
 	}
 
 	public function descargarRecibo () {
