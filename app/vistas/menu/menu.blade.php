@@ -22,9 +22,9 @@
 			    		<a href=""
 			    			class="dropdown-toggle"
 			    			id="dropdownMenu1"
-			    			role="button" 
-		    				data-toggle="dropdown" 
-		    				aria-haspopup="true" 
+			    			role="button"
+		    				data-toggle="dropdown"
+		    				aria-haspopup="true"
 		    				aria-expanded="false">
 			    				<span class="glyphicon glyphicon-list-alt"></span> VEHÍCULOS
 			    				<span class="caret"></span>
@@ -63,7 +63,7 @@
 				</li>
 				<li>
 					<a data-toggle="tab" href="#promo"	>
-						<span class="glyphicon glyphicon-gift"></span> Promociones <span class="badge">0</span>
+						<span class="glyphicon glyphicon-gift"></span> Promociones <span class="badge">1</span>
 					</a>
 				</li>
 				<!-- <li>
